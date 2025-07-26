@@ -64,4 +64,5 @@ SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-token
 ```
 
 ```bash
+pnpm codegen
 pnpm dev

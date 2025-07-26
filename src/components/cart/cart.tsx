@@ -19,6 +19,7 @@ import RemoveFromCartButton from "./remove-from-cart-button";
 import ClearBagButton from "./clear-bag-button";
 import { ScrollArea } from "../ui/scroll-area";
 import { formatPrice } from "@/lib/utils";
+import CheckoutButton from "./checkout-button";
 
 export default function Cart() {
    const { items } = useCart();
@@ -132,7 +133,7 @@ export default function Cart() {
                            <span className="text-xs font-medium">
                               {formatPrice({
                                  amount: cartTotal,
-                                 currency: "NGN"
+                                 currency: "NGN",
                               })}
                            </span>
                         </div>
@@ -141,7 +142,7 @@ export default function Cart() {
                         </span>
                      </div>
                      <div className="flex flex-col gap-2 mt-2">
-                        <Button type="submit">Go To Checkout</Button>
+                        <CheckoutButton />
                         <ClearBagButton />
                      </div>
                   </div>

@@ -3,6 +3,13 @@
 /* eslint-disable */
 import type * as StorefrontTypes from './storefront.types';
 
+export type CartCreateMutationVariables = StorefrontTypes.Exact<{
+  input: StorefrontTypes.CartInput;
+}>;
+
+
+export type CartCreateMutation = { cartCreate?: StorefrontTypes.Maybe<{ cart?: StorefrontTypes.Maybe<Pick<StorefrontTypes.Cart, 'id' | 'checkoutUrl'>>, userErrors: Array<Pick<StorefrontTypes.CartUserError, 'field' | 'message'>> }> };
+
 export type ProductSlugQueryVariables = StorefrontTypes.Exact<{
   handle: StorefrontTypes.Scalars['String']['input'];
 }>;
@@ -32,6 +39,7 @@ interface GeneratedQueryTypes {
 }
 
 interface GeneratedMutationTypes {
+  "\n   #graphql\n   mutation cartCreate($input: CartInput!) {\n      cartCreate(input: $input) {\n         cart {\n            id\n            checkoutUrl\n         }\n         userErrors {\n            field\n            message\n         }\n      }\n    }\n": {return: CartCreateMutation, variables: CartCreateMutationVariables},
 }
 declare module '@shopify/storefront-api-client' {
   type InputMaybe<T> = StorefrontTypes.InputMaybe<T>;

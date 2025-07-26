@@ -11,7 +11,7 @@ export default async function Page() {
    return (
       <>
          <div className="flex flex-col items-center justify-center space-y-4 w-full text-center rounded-lg">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+            <h1 className="text-3xl lg:text-4xl font-semibold">
                Summer styles are finally here
             </h1>
             <p className="max-w-md mx-auto text-sm">

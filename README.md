@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Simple E-commerce Store with Shopify + Next.js
 
-## Getting Started
+This project is a minimalist, performant e-commerce storefront built using **Next.js App Router** and powered by **Shopify Storefront API**. It’s designed to be clean, fast, and easy to extend — perfect for small brands or case studies.
 
-First, run the development server:
+---
+
+## 📸 Instagram Post
+
+**Title:**  
+> _“How I Built a Simple E-commerce Store with Next.js and Shopify”_
+
+Check it out on Instagram: [@raheem.code](https://instagram.com/@raheem.code)
+
+---
+
+## ⚙️ Tech Stack
+
+- **Next.js 15** – App Router, Server Components, SSR/ISR
+- **TypeScript** – Fully typed for safety
+- **Shopify Storefront API** – Product and variant data
+- **Tailwind CSS** – Clean UI and responsive design
+- **Zustand** – Lightweight global state (cart)
+- **NUQS** – Query string state for selected variants
+- **Sonner** – For toast notifications
+- **html-react-parser** – Custom rendering for rich product descriptions
+
+---
+
+## ✨ Features
+
+- 🔍 View all products from Shopify
+- 🛒 Add to cart with variant selection
+- 📦 Cart sheet with quantity management and persistent state
+- 🧩 Variant-aware pricing and availability
+- 📄 Beautiful product pages with custom HTML rendering
+- 🚚 Free shipping & 30-day return messaging
+- ⚡ ISR (Incremental Static Regeneration) with on-demand revalidation ready
+- 💬 Instagram-style mobile-friendly layout
+
+---
+
+## 🖼️ Screenshots
+
+| Home | Product | Cart |
+|------|---------|------|
+| ![home](./public/screenshots/home.png) | ![product](./public/screenshots/product.png) | ![cart](./public/screenshots/cart.png) |
+
+> (Add your screenshots to `public/screenshots/`)
+
+---
+
+## 🧪 Running Locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/R4heem-Orekoya/NTRWL
+cd NTRWL
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+.env.local
+```bash
+SHOPIFY_DOMAIN=your-shop.myshopify.com
+SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-token
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm dev

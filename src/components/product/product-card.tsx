@@ -21,9 +21,8 @@ export default function ProductCard({ product }: ProductCardProps) {
                className="size-full object-cover"
             />
          </div>
-         <h3 className="mt-2 text-sm font-medium ">{product.title}</h3>
+         <h3 className="mt-2 text-sm font-medium line-clamp-1">{product.title}</h3>
          <p className="flex items-center space-x-2 text-xs text-muted-foreground">
-            {/* {product.variants.edges.length > 1 && <span>starting from {" "}</span>} */}
             <span>
                {formatPrice({
                   amount: product.variants.edges[0].node.price.amount,

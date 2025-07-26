@@ -45,8 +45,6 @@ Check it out on Instagram: [@raheem.code](https://instagram.com/@raheem.code)
 |------|---------|------|
 | ![home](./public/screenshots/home.png) | ![product](./public/screenshots/product.png) | ![cart](./public/screenshots/cart.png) |
 
-> (Add your screenshots to `public/screenshots/`)
-
 ---
 
 ## 🧪 Running Locally
